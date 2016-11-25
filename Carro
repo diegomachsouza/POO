@@ -1,0 +1,18 @@
+<?php
+
+class carro
+{
+	$cor;
+	$motor;
+	$porta;
+	$modelo;
+	$marca;
+	
+	function Ligar()
+	{
+
+	}			
+	
+
+}
+
