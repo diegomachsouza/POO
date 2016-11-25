@@ -1,12 +1,17 @@
+<pre>
 <?php
 require_once "Carro.php";
+require_once 'Motor.php';  //Não há diferença entre aspas simples e duplas
 
-$veiculo1 = new Carro("Preto");
-$veiculo2 = new Carro();
+$motor = new Motor();
 
+$veiculo1 = new Carro($motor, "Preto");
+$veiculo2 = clone $veiculo1;
+
+$veiculo2->cor = "Vermelho";
 $veiculo2->abastecer(20);
 
-var_dump($veiculo1, $veiculo2);   ///Pegou a cor default
+$veiculo1->acelerar(40);
+var_dump($veiculo1);   ///Pegou a cor e o motor default
 	
-echo $veiculo2::MODELO."\n";
 

@@ -1,7 +1,0 @@
-<?php
-require "Carro.php";
-
-$veiculo = new Carro();
-
-var_dump($veiculo);
-	
