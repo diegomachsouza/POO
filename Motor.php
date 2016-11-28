@@ -22,7 +22,7 @@ class Motor
      */
     
     
-    public function acelerar($valor = 0)
+    public function acelerar($valor)
     {
         $this->aceleracao = $valor;
         $potencia = $valor * self::POTENCIA;

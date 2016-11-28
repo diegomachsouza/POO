@@ -15,4 +15,6 @@ $veiculo1->acelerar(40);
 var_dump($veiculo1);   ///Pegou a cor e o motor default
 	
 
-echo $veiculo1->acelerar(10);
+echo 'Acelerado em '.$veiculo1->acelerar(10)." km/h \n";
+
+// Usa=-se o Apache 

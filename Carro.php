@@ -59,7 +59,7 @@ class carro
         public function acelerar($valor) // Eu acelero o motor, e ele faz acelerar o carro
         {
             $torque = $this->motor->acelerar($valor);
-            
+            return $torque;
         }
 	
         /**
