@@ -10,7 +10,8 @@
 
 class Motor 
 {
-    private $potencia = 1.0;
+    const POTENCIA = 1.0; // a const é definida na classe
+    
     private $tipoCombustivel = "Flex";
     private $aceleracao = 0; // Tem um método para acessar esse atributo
     
@@ -24,7 +25,7 @@ class Motor
     public function acelerar($valor = 0)
     {
         $this->aceleracao = $valor;
-        $potencia = $valor * $this->potencia;
+        $potencia = $valor * self::POTENCIA;
         return $potencia;    // POderia ser: "return $valor * $this->potencia;"
     }
 }

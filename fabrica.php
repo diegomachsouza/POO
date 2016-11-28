@@ -15,3 +15,4 @@ $veiculo1->acelerar(40);
 var_dump($veiculo1);   ///Pegou a cor e o motor default
 	
 
+echo $veiculo1->acelerar(10);
